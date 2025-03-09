@@ -34,10 +34,24 @@ model RefreshToken {
 
 ## Usage
 
+#### Prisma
+
 ```js
 import { Auth } from "@aidan-neel/auth";
 import { PrismaClient } from "@prisma/client";
 
 const Prisma = new PrismaClient();
 const auth = new Auth(Prisma);
+
+// Register
+await auth.registerUser(email, password);
+
+// Login
+const { access_token, refresh_token } = await auth.loginUser(email, password);
+
+// Refresh Access Token
+const refreshedToken = await auth.refreshAccessToken(refresh_token);
+
+// Logout
+await auth.logoutUser(refresh_token);
 ```
