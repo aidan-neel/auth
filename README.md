@@ -33,7 +33,7 @@ model RefreshToken {
 }
 ```
 
-And you're done! Just start using it as seen below:
+Usage
 
 ```js
 import { Auth } from "@aidan-neel/auth";
@@ -42,5 +42,3 @@ import { PrismaClient } from "@prisma/client";
 const Prisma = new PrismaClient();
 const auth = new Auth(Prisma);
 ```
-
-Support for SQLite, PostgreSQL, and other ORMs is next up.
