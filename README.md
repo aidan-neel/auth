@@ -4,7 +4,6 @@
 
 <img src="https://img.shields.io/npm/v/@aidan-neel/auth/latest?style=flat-square&label=version" alt="NPM @aidan-neel/auth@latest" />
 
-
 `@aidan-neel/auth` implements JWT-based authentication for support with Prisma ORM seamlessly.
 
 ## Setup
@@ -33,7 +32,7 @@ model RefreshToken {
 }
 ```
 
-Usage
+## Usage
 
 ```js
 import { Auth } from "@aidan-neel/auth";
