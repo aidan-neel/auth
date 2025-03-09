@@ -1,0 +1,44 @@
+# Node modules directory
+node_modules/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+
+# Environment files
+.env
+
+# npm package lock
+package-lock.json
+
+# Next.js build output
+.next/
+
+# TypeScript compiled files
+/dist
+/build
+
+# Optional npm cache
+.npm/
+
+# Yarn v2 pnp
+.pnp.*
+
+# dotenv environment variables file
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# SQLite databases
+*.sqlite
+*.db
