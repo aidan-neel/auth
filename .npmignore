@@ -1,5 +1,6 @@
 dist/
 dev/
+src/dev
 node_modules/
 jest.config.js
 .env

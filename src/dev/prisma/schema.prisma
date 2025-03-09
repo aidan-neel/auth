@@ -14,19 +14,18 @@ datasource db {
 }
 
 // Add this to your prisma schema
-
 model User {
-  id       Int      @id @default(autoincrement())
-  username String
-  password String
-  sessions Session[]
+  id            Int       @id @default(autoincrement())
+  email         String    @unique
+  username      String
+  password      String
+  refreshTokens RefreshToken[]
 }
 
-model Session {
-  id        Int      @id @default(autoincrement())
-  userId    Int
-  sessionId String   @unique
-  user      User     @relation(fields: [userId], references: [id])
-  createdAt DateTime @default(now())
-  expiresAt DateTime
+model RefreshToken {
+    id        Int    @id @default(autoincrement())
+    token     String @unique
+    user      User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+    userId    Int
+    expiresAt DateTime
 }
