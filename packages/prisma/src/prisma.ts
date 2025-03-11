@@ -1,11 +1,11 @@
 import { v4 as uuidv4 } from "uuid";
 import { PrismaClient } from "@prisma/client";
-import { createToken } from "@aidan-neel/auth/tokens";
+import { createToken } from "@aidan-neel/auth";
 
 import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
 import dotenv from "dotenv";
-import { DatabaseAdapter } from "@aidan-neel/auth/adapter";
+import { DatabaseAdapter } from "@aidan-neel/auth/src/adapter";
 
 dotenv.config();
 

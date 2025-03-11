@@ -1,19 +1,21 @@
 {
 	"name": "@aidan-neel/auth-prisma",
-	"version": "1.0.0",
-	"main": "index.ts",
+	"version": "1.2.2",
+	"main": "dist/prisma/prisma/index.js",
 	"private": false,
+	"types": "dist/prisma/prisma/index.d.ts",
 	"exports": {
-		".": "./index.ts"
+		".": "./dist/prisma/prisma/index.js"
 	},
 	"dependencies": {
-		"@aidan-neel/auth": "1.0.0",
-		"@aidan-neel/auth-prisma": "file:",
 		"@prisma/client": "^6.4.1",
 		"bcrypt": "^5.1.1",
 		"bcryptjs": "^3.0.2",
 		"dotenv": "^16.4.7",
 		"jsonwebtoken": "^9.0.2",
 		"prisma": "^6.4.1"
+	},
+	"peerDependencies": {
+		"@aidan-neel/auth": "^1.2.1"
 	}
 }

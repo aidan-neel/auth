@@ -1,0 +1,16 @@
+# .npmignore file for each package
+
+# Exclude development tools and config files
+tsconfig.json
+tsconfig.build.json
+tsconfig.prod.json
+*.log
+
+# Exclude test files if any
+tests/
+*.test.ts
+
+# Exclude the package.json and other config files if you don’t need them
+package.json
+README.md
+node_modules/

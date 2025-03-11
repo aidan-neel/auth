@@ -1,16 +1,15 @@
 {
-	"name": "auth-monorepo",
+	"name": "@aidan-neel/auth",
 	"private": true,
 	"workspaces": [
-		"packages/core",
-		""
+		"packages/*"
 	],
-	"dependencies": {
-		"@prisma/client": "^6.4.1",
-		"auth-monorepo": "file:",
-		"pg": "^8.13.3"
-	},
 	"devDependencies": {
-		"@types/bcrypt": "^5.0.2"
+		"tsx": "^4.19.3",
+		"typescript": "^5.8.2"
+	},
+	"scripts": {
+		"build": "tsc --build tsconfig.json",
+		"publish": "npm publish --workspaces --access public"
 	}
 }

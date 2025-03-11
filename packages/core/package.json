@@ -1,9 +1,13 @@
 {
 	"name": "@aidan-neel/auth",
-	"version": "1.0.0",
+	"version": "1.2.2",
 	"description": "Authentication library designed for fast and easy integration into your JavaScript servers",
-	"main": "index.ts",
+	"main": "dist/core/core/index.js",
+	"types": "dist/core/core/index.d.ts",
 	"private": false,
+	"exports": {
+		".": "./dist/core/core/index.js"
+	},
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
@@ -39,7 +43,6 @@
 		"typescript": "^5.8.2"
 	},
 	"dependencies": {
-		"@aidan-neel/auth": "file:",
 		"bcrypt": "^5.1.1",
 		"bcryptjs": "^3.0.2",
 		"dotenv": "^16.4.7",

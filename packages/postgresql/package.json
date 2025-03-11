@@ -1,18 +1,20 @@
 {
 	"name": "@aidan-neel/auth-postgresql",
-	"version": "1.0.0",
-	"main": "index.ts",
+	"version": "1.2.2",
+	"main": "dist/postgresql/postgresql/index.js",
 	"private": false,
+	"types": "dist/postgresql/postgresql/index.d.ts",
 	"exports": {
-		".": "./index.ts"
+		".": "./dist/postgresql/postgresql/index.js"
 	},
 	"dependencies": {
-		"@aidan-neel/auth": "1.0.0",
-		"@aidan-neel/auth-postgresql": "file:",
 		"bcrypt": "^5.1.1",
 		"bcryptjs": "^3.0.2",
 		"dotenv": "^16.4.7",
 		"jsonwebtoken": "^9.0.2",
-		"pg": "^8.0.0"
+		"pg": "^6.4.1"
+	},
+	"peerDependencies": {
+		"@aidan-neel/auth": "^1.2.1"
 	}
 }

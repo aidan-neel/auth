@@ -2,7 +2,7 @@ import { Client } from "pg";
 import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
 import { createToken } from "@aidan-neel/auth";
-import type { DatabaseAdapter } from "@aidan-neel/auth/adapter";
+import type { DatabaseAdapter } from "@aidan-neel/auth/src/adapter";
 
 export class PostgresAdapter implements DatabaseAdapter {
 	public client: Client;

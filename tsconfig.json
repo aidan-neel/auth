@@ -6,20 +6,17 @@
 		"skipLibCheck": true,
 		"forceConsistentCasingInFileNames": true,
 		"outDir": "./dist",
-		"rootDir": "./packages"
+		"rootDir": "./packages",
+		"composite": true,
+		"paths": {
+			"@aidan-neel/auth": ["../core/src"] // Map to the correct location of core package
+		}
 	},
-	"include": [
-		"src/**/*.ts",
-		"tests/**/*.ts",
-		"packages/core/auth_.ts",
-		"packages/core/auth.ts",
-		"packages/core/index.ts",
-		"packages/core/tokens.ts",
-		"packages/core/types.ts",
-		"packages/postgresql/postgresql.ts",
-		"packages/prisma/prisma.ts",
-		"packages/postgresql/index.ts",
-		"packages/core/adapter.ts"
+	"include": ["packages/**/*.ts"],
+	"references": [
+		{ "path": "./packages/core" },
+		{ "path": "./packages/postgresql" },
+		{ "path": "./packages/prisma" }
 	],
-	"exclude": ["node_modules"]
+	"exclude": ["node_modules", "dist"]
 }
