@@ -33,6 +33,10 @@ model RefreshToken {
 }
 ```
 
+## Install
+
+`npm install @aidan-neel/auth`
+
 ## Usage
 
 #### Example with Prisma

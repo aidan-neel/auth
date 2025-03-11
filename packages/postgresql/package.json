@@ -2,13 +2,15 @@
 	"name": "@aidan-neel/auth-postgresql",
 	"version": "1.0.0",
 	"main": "index.ts",
+	"private": false,
 	"exports": {
 		".": "./index.ts"
 	},
 	"dependencies": {
+		"@aidan-neel/auth": "1.0.0",
+		"@aidan-neel/auth-postgresql": "file:",
 		"bcrypt": "^5.1.1",
 		"bcryptjs": "^3.0.2",
-		"@aidan-neel/auth": "1.0.0",
 		"dotenv": "^16.4.7",
 		"jsonwebtoken": "^9.0.2",
 		"pg": "^8.0.0"
