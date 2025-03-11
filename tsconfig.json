@@ -6,8 +6,20 @@
 		"skipLibCheck": true,
 		"forceConsistentCasingInFileNames": true,
 		"outDir": "./dist",
-		"rootDir": "./src"
+		"rootDir": "./packages"
 	},
-	"include": ["src/**/*.ts", "tests/**/*.ts"],
+	"include": [
+		"src/**/*.ts",
+		"tests/**/*.ts",
+		"packages/core/auth_.ts",
+		"packages/core/auth.ts",
+		"packages/core/index.ts",
+		"packages/core/tokens.ts",
+		"packages/core/types.ts",
+		"packages/postgresql/postgresql.ts",
+		"packages/prisma/prisma.ts",
+		"packages/postgresql/index.ts",
+		"packages/core/adapter.ts"
+	],
 	"exclude": ["node_modules"]
 }

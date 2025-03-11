@@ -1,0 +1,49 @@
+{
+	"name": "@aidan-neel/auth",
+	"version": "1.0.0",
+	"description": "Authentication library designed for fast and easy integration into your JavaScript servers",
+	"main": "index.ts",
+	"private": false,
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/aidan-neel/auth.git"
+	},
+	"keywords": [
+		"auth",
+		"library",
+		"javascript",
+		"easy",
+		"easy",
+		"auth",
+		"authentication",
+		"authorization",
+		"auth.js"
+	],
+	"author": "Aidan Neel",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/aidan-neel/auth/issues"
+	},
+	"homepage": "https://github.com/aidan-neel/auth#readme",
+	"devDependencies": {
+		"@types/jest": "^29.5.14",
+		"@types/jsonwebtoken": "^9.0.9",
+		"@types/node": "^22.13.10",
+		"@types/pg": "^8.11.11",
+		"jest": "^29.7.0",
+		"ts-jest": "^29.2.6",
+		"tsx": "^4.19.3",
+		"typescript": "^5.8.2"
+	},
+	"dependencies": {
+		"@aidan-neel/auth": "file:",
+		"bcrypt": "^5.1.1",
+		"bcryptjs": "^3.0.2",
+		"dotenv": "^16.4.7",
+		"jsonwebtoken": "^9.0.2",
+		"uuid": "^11.1.0"
+	}
+}

@@ -1,10 +1,11 @@
 import { v4 as uuidv4 } from "uuid";
 import { PrismaClient } from "@prisma/client";
-import { createToken } from "./jwt";
+import { createToken } from "@aidan-neel/auth/tokens";
 
 import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
 import dotenv from "dotenv";
+import { DatabaseAdapter } from "@aidan-neel/auth/adapter";
 
 dotenv.config();
 
@@ -18,7 +19,7 @@ if (!ACCESS_TOKEN_SECRET || !REFRESH_TOKEN_SECRET) {
 	process.exit(1);
 }
 
-export class Auth {
+export class PrismaAdapter implements DatabaseAdapter {
 	public Prisma: PrismaClient;
 
 	constructor(Prisma: PrismaClient) {
