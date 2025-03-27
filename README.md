@@ -1,6 +1,6 @@
 ## @aidan-neel/auth
 
-<b>Open-Source JavaScript and TypeScript authentication</b>
+<b>Open-Source TypeScript authentication</b>
 
 <img src="https://img.shields.io/npm/v/@aidan-neel/auth/latest?style=flat-square&label=version" alt="NPM @aidan-neel/auth@latest" />
 
