@@ -1,0 +1,7 @@
+{
+	"extends": "../../tsconfig.json",
+	"compilerOptions": {
+		"outDir": "./dist/mongodb"
+	},
+	"include": ["src/**/*.ts", "index.ts"]
+}

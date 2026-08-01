@@ -1,0 +1,20 @@
+{
+	"name": "@aidan-neel/auth-mongodb",
+	"version": "1.2.2",
+	"main": "dist/mongodb/mongodb/index.js",
+	"private": false,
+	"types": "dist/mongodb/mongodb/index.d.ts",
+	"exports": {
+		".": "./dist/mongodb/mongodb/index.js"
+	},
+	"dependencies": {
+		"bcrypt": "^5.1.1",
+		"bcryptjs": "^3.0.2",
+		"dotenv": "^16.4.7",
+		"jsonwebtoken": "^9.0.2",
+		"mongodb": "^6.4.0"
+	},
+	"peerDependencies": {
+		"@aidan-neel/auth": "^1.2.1"
+	}
+}

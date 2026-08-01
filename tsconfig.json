@@ -16,7 +16,8 @@
 	"references": [
 		{ "path": "./packages/core" },
 		{ "path": "./packages/postgresql" },
-		{ "path": "./packages/prisma" }
+		{ "path": "./packages/prisma" },
+		{ "path": "./packages/mongodb" }
 	],
 	"exclude": ["node_modules", "dist"]
 }

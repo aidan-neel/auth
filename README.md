@@ -72,3 +72,4 @@ await auth.logoutUser(refreshed_token);
 
 -   `@aidan-neel/auth-postgresql`
 -   `@aidan-neel/auth-prisma`
+-   `@aidan-neel/auth-mongodb`
